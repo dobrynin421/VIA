@@ -1,7 +1,7 @@
 setwd("D:/")
 mydata<-read.table(file = "Georgia.txt", header = TRUE)
 attach(mydata)
-plot(Year, terrorism, xlab = "Год", ylab = "Терроризм", main="Частота упоминаний характеристик для Грузии", pch=15, col="red", type="b", xlim=c(2000,2014), ylim=c(0,900))
+plot(Year, terrorism, xlab = "Год", ylab = "Частота", main="Частота упоминаний характеристик для Грузии", pch=15, col="red", type="b", xlim=c(2000,2014), ylim=c(0,max(mydata)))
 lines (Year,terrorist, xlim=c(2000,2014), pch=14, col="green", type="b")
 lines (Year,occupation, xlim=c(2000,2014), pch=16, col="blacK", type="b")
 lines (Year,narcotic, xlim=c(2000,2014), pch=17, col="yellow", type="b")
