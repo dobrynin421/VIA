@@ -1,4 +1,4 @@
-setwd("D:/")
+setwd("C:/LCM/Georgia")
 mydata<-read.table(file = "Georgia.txt", header = TRUE)
 attach(mydata)
 plot(Year, terrorism, xlab = "Год", ylab = "Частота", main="Частота упоминаний характеристик для Грузии", pch=15, col="red", type="b", xlim=c(2000,2014), ylim=c(0,max(mydata)))
